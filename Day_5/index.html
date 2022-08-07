@@ -76,10 +76,11 @@
     <div>
       <h3>Example</h3>
       <ul>
-        <li v-for="number in numbers" :key="number.id">
-          <p> {{ number.value }} </p>
-          <input type="text" placeholder="Type something...">
+        <li v-for="number in numbers" :key="number.id"> 
+          {{ number.value }} 
+          <input type="text" placeholder="Type something..."/>
         </li>
+        
       </ul>
       <button v-on:click="shuffle">Shuffle</button>
     </div>

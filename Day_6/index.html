@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+      href="https://unpkg.com/bulma@0.7.4/css/bulma.css" />
+    <title>Day 6 : 30 Days of Vue JS</title>
+</head>
+<body>
+    <div id="app" style="padding: 20px;">
+        <h2 class="title is-3"> {{ day6 }} </h2>
+
+        <div>
+            <h3 class="subtitle is-4">V-Model</h3>
+            <p> {{ vmodelPara1 }} </p>
+            <img v-bind:src="imgVModel1" alt="Image V-Model" style="width: 300px;">
+        </div>
+
+        <div class="content">
+            <p> {{ vmodelPara2 }} </p>
+            <ul>
+                <li v-for="item in vmodelPara2List" :key="item.id"> {{ item.value }} </li>
+            </ul>
+            <p> {{ vmodelPara3 }} </p>
+            <img v-bind:src="imgVModel2" alt="Image V-Model" style="width: 600px;">
+            
+            <p> {{ vmodelPara4 }} </p>
+        </div>
+
+        <div class="content">
+            <p> {{ vmodelPara5 }} </p>
+            <img v-bind:src="imgVModel3" alt="Image V-Model" style="width: 600px;">
+
+            <p> {{ vmodelPara6 }} </p>
+            <ul>
+                <li v-for="item in vmodelPara6List" :key="item.id"> {{ item.value }} </li>
+            </ul>
+        </div>
+
+        <div>
+            <p> {{ vmodelPara7 }} </p>
+            <img v-bind:src="imgVModel4" alt="Image V-Model" style="width: 600px;">
+            
+            <p> {{ vmodelPara8 }} </p>
+
+            <div class="block notification">
+                <span><img v-bind:src="svgInfoIcon" style="width:25px;"></span>
+                <span><p> {{ vmodelPara9 }} </p></span>    
+            </div>
+        </div>
+
+        <div>
+            <p> {{ vmodelPara10 }} </p> 
+            <p> {{ vmodelPara11 }} </p> 
+            <img v-bind:src="imgVModel5" alt="Image V-Model" style="width: 600px;">
+
+            <p> {{ vmodelPara12 }} </p> 
+            <img v-bind:src="imgVModel6" alt="Image V-Model" style="width: 600px;">
+        </div>
+
+        <div>
+            <p> {{ vmodelPara13 }} </p> 
+            <img v-bind:src="imgVModel7" alt="Image V-Model" style="width: 600px;">
+        </div>
+
+        <div>
+            <p> {{ vmodelPara14 }} </p> 
+            <img v-bind:src="imgVModel8" alt="Image V-Model" style="width: 600px;">
+        </div>
+
+        <div>
+            <p> {{ vmodelPara15 }} </p> 
+            <img v-bind:src="imgVModel9" alt="Image V-Model" style="width: 600px;">
+        </div>
+
+        <div>
+            <p> {{ vmodelPara16 }} </p> 
+            <img v-bind:src="imgVModel10" alt="Image V-Model" style="width: 600px;">
+        </div>
+
+        <div>
+            <p> {{ vmodelPara17 }} </p>
+            <p> {{ vmodelPara18 }} </p>
+        </div>
+
+        <br><br>
+        <div>
+            <h2 class="subtitle">Two-way Data Binding</h2>
+            <p> {{ twoWayBindingPara1 }} </p>
+            <p> {{ twoWayBindingPara2 }} </p>
+        </div>
+        <br><br><br>
+        <!-- Example -->
+        <div>
+            <h3 class="subtitle is-4"> Example</h3>
+            <div class="field">
+                <label class="label">Name</label>
+                <input type="text" class="input" placeholder="Your name" v-model="example.name" style="width: auto;" />
+            </div>
+    
+            <div class="field">
+                <label class="label">Subject</label>
+                <div class="select">
+                    <select v-model="example.subject">
+                        <option disabled value="">Select subject</option>
+                        <option>Subject 1</option>
+                        <option>Subject 2</option>
+                        <option>Subject 3</option>
+                        <option>Subject 4</option>
+                        <option>Subject 5</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox" v-model="example.termsAndConditions" />
+                    I agree to the terms and conditions.
+                </label>   
+            </div>
+    
+            <div class="field">
+                <label class="radio">
+                    <input type="radio" value="No" v-model="example.yesOrNo" /> No
+                </label>
+    
+                <label class="radio">
+                    <input type="radio" value="Yes" v-model="example.yesOrNo" /> Yes
+                </label>
+            </div>
+    
+            <div class="field">
+                <button class="button is-info" @click="submit">Submit</button>
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; padding: 15px;">
+            <a href="../Day_5/index.html">Day 5 : List Rendering with v-for</a>
+            <a href="../Day_7/index.html">Day 7 : Vue Devtools</a>
+        </div>
+
+    </div>
+
+    <script src="../Day_1/js/vue.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
