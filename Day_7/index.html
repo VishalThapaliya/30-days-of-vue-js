@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 : 30 Days of Vue JS</title>
+</head>
+<body>
+    <div id="app">
+        <h2> {{ day7 }} </h2>
+
+        <div>
+            <h4> Vue DevTools</h4>
+            <p> {{ devToolsPara1 }} </p>
+            <ul>
+                <li v-for="item in devToolsPara1List" :key="item.id"> {{ item.value }} </li>
+            </ul>
+            <p> {{ devToolsPara2 }} </p>
+            
+            <p> {{ devToolsPara3 }} </p>
+            <img v-bind:src="imgDevTools1" alt="Image Dev tools 1">
+
+            <p> {{ devToolsPara4 }} </p>
+            <img v-bind:src="imgDevTools2" alt="Image Dev tools 2">
+
+            <p> {{ devToolsPara5 }} </p>
+            <img v-bind:src="imgDevTools3" alt="Image Dev tools 3">
+
+        </div>
+
+        <div>
+            <h4> File Based URLs - Chrome </h4>
+
+            <p> {{ fileBasedUrlPara1 }} </p>
+            <img v-bind:src="imgDevTools4" alt="Image Dev tools 4">
+            <p> {{ fileBasedUrlPara2 }} </p>
+        </div>
+
+        <div>
+            <h4> Using the Vue DevTools </h4>
+
+            <p> {{ usingDevToolsPara1 }} </p>
+            <img v-bind:src="imgDevTools5" alt="Image Dev tools 5">
+            
+            <p> {{ usingDevToolsPara2 }} </p>
+            <img v-bind:src="imgDevTools6" alt="Image Dev tools 6">
+            <p> {{ usingDevToolsPara3 }} </p>
+
+            <p> {{ usingDevToolsPara4 }} </p>
+            <img v-bind:src="imgDevTools7" alt="Image Dev tools 7" style="width: 900px;">
+
+            <p> {{ usingDevToolsPara5 }} </p>
+            <ul>
+                <li v-for="item in usingDevToolsPara5List" :key="item.id"> {{ item.value }} </li>
+            </ul>
+
+            <p> {{ usingDevToolsPara6 }} </p>
+            <img v-bind:src="imgDevTools8" alt="Image Dev tools 8" style="width: 900px;">
+
+            <p> {{ usingDevToolsPara7 }} </p>
+            <p> {{ usingDevToolsPara8 }} </p>
+            <p> {{ usingDevToolsPara9 }} </p>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; padding: 15px;">
+            <a href="../Day_6/index.html">Day 6 : Form Handling with v-model</a>
+            <a href="../Day_8/index.html">Day 8 : Method and Computed Properties</a>
+        </div>
+    </div>
+    
+    <script src="../Day_1/js/vue.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
