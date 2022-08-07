@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 4 : 30 Days of Vue JS</title>
+</head>
+<body>
+  <div id="app">
+    <h2>Vue Directives</h2>
+    <p> {{ chapterDescription }} </p>
+    <div>
+      <h3><i> {{ eventHandling }} </i></h3>
+      <p> {{ eventHandlingPara1 }}</p>
+
+      <div>
+        <h4>Example</h4>
+        <p> {{ greeting }} </p>
+        <p> {{ alertMessage }} </p>
+        <button v-on:click = 'changeGreeting' >Click Me</button>
+        <button v-on:dblclick = 'changeGreeting' >Double Click Me</button>
+        <input v-on:keyup='alertMessageGreeting' placeholder="Type something" />
+        <input v-on:keyup.enter='alertEnterGreeting' placeholder="Type something and press Enter"/>
+      </div>
+
+      <div>
+        <h3> {{ attributeBinding }}</h3>
+        <p> {{ attributeBindingPara1 }}</p>
+        <p> {{ attributeBindingPara2 }}</p>
+        <p> {{ attributeBindingPara3 }}</p>
+        <p> {{ attributeBindingPara4 }}</p>
+        <img v-bind:src="vueImage" alt="VueJS image" style="width: 300px; ">
+      </div>
+
+      <div>
+        <h3> {{conditionalRendering}} </h3>
+        <p> {{conditionalRenderingPara1}} </p>
+        
+        <div>
+          <h4>Example 1</h4>
+          <div>
+            <p><strong> {{ helloMessage }} </strong></p>
+            <p>by {{ user }} who lives in {{ city }}, {{ country }}</p>
+            <img v-bind:src="cityImage" v-bind:alt="cityImageAlt" style="width: 300px;"/>
+            <button v-on:click="changeCity">Change city</button>
+          </div>
+        </div>
+
+        <p> {{conditionalRenderingPara2}} </p>
+        <p> {{conditionalRenderingPara3}} </p>
+        
+        <div>
+          <h4>Example 2 : v-if directive</h4>
+          <div>
+            <p><strong> {{ helloMessage }} </strong></p>
+            <p v-if="city === 'Grenoble'">
+              by {{ user }} who lives in {{ city }}, {{ country }}.
+            </p>
+            <p v-if="city === 'Edinburgh'">
+              by {{ user }} who wants to visit {{ city }}, {{ country }}.
+            </p>
+            <img v-bind:src="cityImage" v-bind:alt="cityImageAlt" style="width: 300px;"/>
+            <button v-on:click="changeCity">Change city</button>
+          </div>
+        </div>
+
+        <p> {{conditionalRenderingPara4}} </p>
+        <p> {{conditionalRenderingPara5}} </p>
+
+        <div>
+          <h4>Example 3 : v-show directive</h4>
+          <div>
+            <p><strong> {{ helloMessage }} </strong></p>
+            <p v-show="city === 'Grenoble'">
+              by {{ user }} who lives in {{ city }}, {{ country }}.
+            </p>
+            <p v-show="city === 'Edinburgh'">
+              by {{ user }} who wants to visit {{ city }}, {{ country }}.
+            </p>
+            <img v-bind:src="cityImage" v-bind:alt="cityImageAlt" style="width: 300px;"/>
+            <button v-on:click="changeCity">Change city</button>
+          </div>
+        </div>
+
+        <p> {{conditionalRenderingPara6}} </p>
+        <p> {{conditionalRenderingPara7}} </p>
+    
+      </div>
+
+      <div>
+        <h3> {{ shorthandSyntax }} </h3>
+        <p> {{ shorthandSyntaxPara1 }} </p>
+
+        <p> {{ shorthandSyntaxExampleComment1 }} </p>
+        <p><strong> {{ shorthandSyntaxExample1 }} </strong></p>
+
+        <p> {{ shorthandSyntaxExampleComment2 }} </p>
+        <p><strong> {{ shorthandSyntaxExample2 }} </strong></p>
+        
+        <p> {{ shorthandSyntaxPara2 }} </p>
+
+        <p> {{ shorthandSyntaxExampleComment1 }} </strong></p>
+        <p><strong> {{ shorthandSyntaxExample3 }} </strong></p>
+        
+        <p> {{ shorthandSyntaxExampleComment2 }} </p>
+        <p><strong> {{ shorthandSyntaxExample4 }} </strong></p>
+
+        <p> {{ shorthandSyntaxPara3 }} </p>
+        <p> {{ shorthandSyntaxPara4 }} </p>
+
+      </div>
+
+    </div>
+
+    <div style="display: flex; justify-content: space-between; padding: 15px;">
+      <a href="../Day_3/index.html">Day 3 : The Vue Instance - Data Driven Applications</a>
+      <a href="../Day_5/index.html">Day 5 : List Rendering with v-for</a>
+    </div>
+  </div>
+  <script src="../Day_1/js/vue.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

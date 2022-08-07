@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 5 | 30 Days of Vue JS</title>
+</head>
+<body>
+  <div id="app">
+    <h2> {{ chapter }} </h2>
+    <div>
+      <h3><i>List Rendering</i></h3>
+      <p> {{listRenderingPara1}} </p>
+    </div>
+    
+    <div>
+      <h3><i>The v-for directive</i></h3>
+      <p> {{vForDirectivePara1}} </p>
+      <img v-bind:src="imageVForSyntax" alt="V-for syntax image" style="width: 500px">
+      
+      <p> {{vForDirectivePara2}} </p>
+      <img v-bind:src="imageVForPara2" alt="V for paragraph 2 image">
+      
+      <p> {{vForDirectivePara3}} </p>
+      <img v-bind:src="imageVForPara3" alt="V for paragraph 3 image">
+
+      <p> {{vForDirectivePara4}} </p>
+      <img v-bind:src="imageVForPara4" alt="V for paragraph 4 image">
+
+      <p> {{vForDirectivePara5}} </p>
+      <p> {{vForDirectivePara6}} </p>
+      <p> {{vForDirectivePara7}} </p>
+    
+    </div>
+
+    <div>
+      <h3><i>The Key Attribute</i></h3>
+      <p> {{ theKeyAttributePara1 }} </p>
+      
+      <p> {{ theKeyAttributePara2 }} </p>
+      
+      <p> {{ theKeyAttributePara3 }} </p>
+      <img v-bind:src="imageKeyAttributePara3" alt="Key attribute paragraph 3 image">
+      
+      <p> {{ theKeyAttributePara4 }} </p>
+      <img v-bind:src="imageKeyAttributePara4" alt="Key attribute paragraph 4 image">
+
+      <p> {{ theKeyAttributePara5 }} </p>
+
+      <p> {{ theKeyAttributePara6 }} </p>
+      <img v-bind:src="imageKeyAttributePara6" alt="Key attribute paragraph 6 image">
+
+      <p style="border: 1px solid aquamarine; background: lightblue; padding: 10px"> {{ theKeyAttributePara7 }} </p>
+
+      <p> {{ theKeyAttributePara8 }} </p>
+      <img v-bind:src="imageKeyAttributePara8" alt="Key attribute paragraph 8 image" style="width: 600px;">
+
+      <p> {{ theKeyAttributePara9 }} </p>
+      <img v-bind:src="imageKeyAttributePara9" alt="Key attribute paragraph 9 image" style="width: 600px;">
+      
+      <p> {{ theKeyAttributePara10 }} </p>
+      <img v-bind:src="imageKeyAttributePara10" alt="Key attribute paragraph 10 image" style="width: 600px;">
+
+      <p> {{ theKeyAttributePara11 }} </p>
+      <img v-bind:src="imageKeyAttributePara11" alt="Key attribute paragraph 11 image" style="width: 600px;">
+
+      <p> {{ theKeyAttributePara12 }} </p>
+
+      <p> {{ theKeyAttributePara13 }} </p>
+      <u> 
+        <li v-for="item in theKeyAttributePara13ListItems" :key="item.id"> {{ item.value }} </li>
+      </u>
+    </div>
+    <br><br><br>
+    <div>
+      <h3>Example</h3>
+      <ul>
+        <li v-for="number in numbers" :key="number.id">
+          <p> {{ number.value }} </p>
+          <input type="text" placeholder="Type something...">
+        </li>
+      </ul>
+      <button v-on:click="shuffle">Shuffle</button>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; padding: 15px;">
+      <a href="../Day_4/index.html">Day 4 : Vue Directives</a>
+      <a href="../Day_6/index.html">Day 6 : Form Handling With V-Model</a>
+    </div>
+  </div>
+  <script src="../Day_1/js/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash/lodash.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

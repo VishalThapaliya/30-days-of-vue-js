@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 3 : 30 Days of Vue JS</title>
+</head>
+<body>
+  <div id="app">
+    <h2>The Vue Instance - Data Driven Applications</h2>
+    
+    <div>
+      <h3><i> Reactive Data </i></h3>
+      <p> {{ reactiveData }} </p>
+    </div>
+    
+    <div>
+      <h3><i> Data Driven Applications </i></h3>
+      <p> {{ dataDrivenApplications }} </p>
+    </div>
+
+    <div>
+      <h3><i> Data Driven Applications </i></h3>
+      <p> {{ dataDrivenApplications }} </p>
+      <p> {{ dataDrivenApplicationsText1 }} </p>
+      <ul>
+        <li v-for="capability in capabilities"> {{capability.text}} </li>
+      </ul>
+      <p> {{ dataDrivenApplicationsText2 }} </p>
+      <p> {{ dataDrivenApplicationsText3 }} </p>
+      <p> {{ dataDrivenApplicationsText4 }} </p>
+      <p> {{ dataDrivenApplicationsText5 }} </p>
+    </div>
+
+    <div>
+      <h3><i> Vue Data Properties </i></h3>
+      <p> {{ vueDataProperties }} </p>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; padding: 15px;">
+      <a href="../Day_2/index.html">Day 2 : The Vue Instance - Data</a>
+      <a href="../Day_4/index.html">Day 4 : Vue Directives</a>
+    </div>
+  </div>
+  <script src="../Day_1/js/vue.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 2 : 30 Days of Vue JS</title>
+</head>
+<body>
+  <h1>Day 2 : The Vue Instance - Data</h1>
+  <div id="app">
+    <div>
+      <div>
+        <h3><i>The Vue Instance</i></h3>
+        <p> {{ vueInstance }} </p>
+      </div>
+
+      <div>
+        <h3><i>Methods and Handling Events</i></h3>
+        <p> {{ vueMethods }} </p>
+        <p> {{ vueEventHandling }} </p>
+        <p> {{ vOnDirective }} </p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; border: 1px solid gray; padding: 15px;">
+        <h3>Example</h3>
+        <h4> {{ greeting }} </h4>
+        <p>by {{ user }} from {{ city }}, {{ country }}</p>
+        <button v-on:click="changeGreeting">Change greeting</button>
+      </div>
+      
+      <div style="display: flex; justify-content: space-between; padding: 15px;">
+        <a href="../Day_1/index.html">Day 1 : What is Vue</a>
+        <a href="../Day_3/index.html">Day 3 : Data Driven Applications</a>
+      </div>
+    </div>
+  </div>
+  <script src="../Day_1/js/vue.js"></script>
+  <script src="../Day_2/js/script.js"></script>
+</body>
+</html>
