@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.4/css/bulma.css" />
+    <title>Day 8 | 30 Days of Vue JS</title>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <h2 class="title"> {{ heading }} </h2>
+            <p> {{ mainPara1 }} </p>
+        </div>
+
+        <div>
+            <h3 class="subtitle"> Methods </h3>
+            <p> {{ methodsPara1 }} </p>
+            <p> {{ methodsPara2 }} </p>
+            <img v-bind:src="imgMethods1" alt="Image methods">
+
+            <p> {{ methodsPara3 }} </p>
+            <img v-bind:src="imgMethods2" alt="Image methods">
+
+            <p> {{ methodsPara4 }} </p>
+            <img v-bind:src="imgMethods3" alt="Image methods">
+
+            <p> {{ methodsPara5 }} </p>
+            <p> {{ methodsPara6 }} </p>
+            <img v-bind:src="imgMethods4" alt="Image methods">
+
+            <p> {{ methodsPara7 }} </p>
+            <img v-bind:src="imgMethods5" alt="Image methods">
+
+            <p> {{ methodsPara8 }} </p>
+            <img v-bind:src="imgMethods3" alt="Image methods">
+
+            <p> {{ methodsPara9 }} </p>
+            <p> {{ methodsPara10 }} </p>
+        </div>
+
+        <div>
+            <h3 class="subtitle"> Computed Properties </h3>
+            <p> {{ computedPara1 }} </p>
+            <img v-bind:src="imgComputed1" alt="Image computed">
+
+            <p> {{ computedPara2 }} </p>
+            <img v-bind:src="imgComputed2" alt="Image computed">
+
+            <p> {{ computedPara3 }} </p>
+            <img v-bind:src="imgMethods3" alt="Image computed">
+
+            <p> {{ computedPara4 }} </p>
+
+        </div>
+
+        <div>
+            <h3 class="subtitle"> Methods vs. Computed Properties </h3>
+            <p> {{ methodsVsComputedPara1 }} </p>
+            <p> {{ methodsVsComputedPara2 }} </p>
+            <img v-bind:src="imgMethodVsComputed1" alt="Image methods vs computed">
+
+            <p> {{ methodsVsComputedPara3 }} </p>
+            <p> {{ methodsVsComputedPara4 }} </p>
+            <img v-bind:src="imgMethodVsComputed2" alt="Image methods vs computed">
+
+            <p> {{ methodsVsComputedPara5 }} </p>
+            <img v-bind:src="imgMethodVsComputed3" alt="Image methods vs computed">
+
+            <p> {{ methodsVsComputedPara6 }} </p>
+            <img v-bind:src="imgMethodVsComputed4" alt="Image methods vs computed">
+
+            <p> {{ methodsVsComputedPara7 }} </p>
+            <p> {{ methodsVsComputedPara8 }} </p>
+            <img v-bind:src="imgMethodVsComputed5" alt="Image methods vs computed">
+
+            <p> {{ methodsVsComputedPara9 }} </p>
+            <p> {{ methodsVsComputedPara10 }} </p>
+            <img v-bind:src="imgMethodVsComputed6" alt="Image methods vs computed">
+
+            <div class="content">
+                <p> {{ methodsVsComputedPara11 }} </p>
+            <ul>
+                <li v-for="item in methodsVsComputedPara11List" :key="item.id">{{item.value}}</li>
+            </ul>
+            </div>
+
+            <p> {{ methodsVsComputedPara12 }} </p>
+            
+        </div>
+        <br><br>
+
+        <div>
+            <h3>Example</h3>
+            <div class="card">
+                <header class="card-header card-header-title">
+                    <span>Original:</span>
+                    {{ heading }}
+                </header>
+    
+                <header class="card-header card-header-title">
+                    <span>Reversed:</span>
+                    {{ reverseString(heading) }}
+                </header>
+    
+                <header class="card-header card-header-title">
+                    <span>Reversed:</span>
+                    {{ reverseString(heading) }}
+                </header>
+    
+                <header class="card-header card-header-title">
+                    <span>Reversed:</span>
+                    {{ reverseString(heading) }}
+                </header>
+    
+                <header class="card-header card-header-title">
+                    <span>Computed Reversed:</span>
+                    {{ computedReverseString }}
+                </header>
+    
+                <header class="card-header card-header-title">
+                    <span>Computed Reversed:</span>
+                    {{ computedReverseString }}
+                </header>
+    
+                <header class="card-header card-header-title">
+                    <span>Computed Reversed:</span>
+                    {{ computedReverseString }}
+                </header>
+    
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; padding: 15px;">
+            <a href="../Day_7/index.html">Day 7 : Vue DevTools</a>
+            <a href="../Day_9/index.html">Day 9 : Watchers</a>
+        </div>
+        
+    </div>
+
+    <script src="../Day_1/js/vue.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
