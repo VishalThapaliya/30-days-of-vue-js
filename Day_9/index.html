@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.4/css/bulma.css" />
+    <title>Day 9 : 30 Days of Vue JS</title>
+</head>
+<body>
+    <div id="app">
+        <h2 class="title"> {{ day9Title }} </h2>
+
+        <div>
+            <h3 class="subtitle">Watchers</h3>
+
+            <p> {{ watchersPara1 }} </p>
+            <p> {{ watchersPara2 }} </p>
+            <img v-bind:src="imgWatchers1" alt="Image watchers">
+
+            <p> {{ watchersPara3 }} </p>
+            <p> {{ watchersPara4 }} </p>
+            <img v-bind:src="imgWatchers2" alt="Image watchers">
+
+            <p> {{ watchersPara5 }} </p>
+            <img v-bind:src="imgWatchers3" alt="Image watchers">
+
+            <p> {{ watchersPara6 }} </p>
+            <img v-bind:src="imgWatchers4" alt="Image watchers">
+
+            <p> {{ watchersPara7 }} </p>
+            <img v-bind:src="imgWatchers5" alt="Image watchers">
+
+            <p> {{ watchersPara8 }} </p>
+            <p> {{ watchersPara9 }} </p>
+            <img v-bind:src="imgWatchers6" alt="Image watchers">
+
+            <p> {{ watchersPara10 }} </p>
+            <p> {{ watchersPara11 }} </p>
+            <img v-bind:src="imgWatchers7" alt="Image watchers">
+
+            <p> {{ watchersPara12 }} </p>
+            <img v-bind:src="imgWatchers8" alt="Image watchers">
+
+            <p> {{ watchersPara13 }} </p>
+
+        </div>
+        <br><br>
+        <div>
+            <h3 class="subtitle">Watchers vs. Computed properties</h3>
+
+            <p> {{ watchersVsComputedPara1 }} </p>
+            <img v-bind:src="imgWatchers9" alt="Image watchers">
+
+            <p> {{ watchersVsComputedPara2 }} </p>
+            <img v-bind:src="imgWatchers10" alt="Image watchers">
+
+            <p> {{ watchersVsComputedPara3 }} </p>
+            <p> {{ watchersVsComputedPara4 }} </p>
+            <img v-bind:src="imgWatchers11" alt="Image watchers">
+
+            <p> {{ watchersVsComputedPara5 }} </p>
+            <img v-bind:src="imgWatchers12" alt="Image watchers">
+
+            <p> {{ watchersVsComputedPara6 }} </p>
+            <p> {{ watchersVsComputedPara7 }} </p>
+        </div>
+        
+        <br><br>
+
+        <div id="example1">
+            <h3 class="subtitle">Example 1</h3>
+            <div class="field">
+                <label class="label">Km</label>
+                <input type="number" v-model="km" class="input" placeholder="Length in kilometer">
+            </div>
+
+            <div class="field">
+                <label class="label">M</label>
+                <input type="number" class="input" v-model="m" placeholder="Length in merter">
+            </div>
+        </div>
+        <br>
+        <div id="example2">
+            <h3 class="subtitle">Example 2</h3>
+            <div class="field">
+                <label class="label">Kilometer</label>
+                <input type="number" class="input" v-model="kilometer" placeholder="Length in Kilometer">
+            </div>
+            <div class="field">
+                <label class="lable">Meter</label>
+                <input type="number" class="input" v-model="meter" placeholder="Length in meter">
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; padding: 15px;">
+            <a href="../Day_8/index.html">Day 8 : Methods and Computed Properties</a>
+            <a href="../Day_10/index.html">Day 10 : Lifecycle Hooks</a>
+        </div>
+
+    </div>
+
+    <script src="../Day_1/js/vue.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
