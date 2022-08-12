@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.4/css/bulma.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Day 11 | 30 Days of Vue JS</title>
+</head>
+<body>
+    <div id="app">
+        <h2 class="title"> {{ title }} </h2>
+        <p> {{ mainPara1 }} </p>
+
+        <br>
+        <div>
+            <h3 class="subtitle"> Components </h3>
+            <p> {{ componentsPara1 }} </p>
+            <p> {{ componentsPara2 }} </p>
+            <p> {{ componentsPara3 }} </p>
+            <p> {{ componentsPara4 }} </p><br>
+
+            <h3 class="subtitle"> Simple Twitter App </h3>
+            <p> {{ componentsPara5 }} </p>
+            <img :src="imgComponents1" alt="Image components">
+
+            <p> {{ componentsPara6 }} </p>
+            <img :src="imgComponents2" alt="Image components">
+
+            <p> {{ componentsPara7 }} </p>
+            <img :src="imgComponents3" alt="Image components">
+
+            <article class="message is-info">
+                <div class="message-header">
+                  <p>Info</p>
+                </div>
+                <div class="message-body">
+                    <p> {{ componentsPara8 }} </p>
+                </div>
+            </article>
+
+            
+            <p> {{ componentsPara9 }} </p>
+            <img :src="imgComponents4" alt="Image components">
+
+            <p> {{ componentsPara10 }} </p>
+            <img :src="imgComponents5" alt="Image components">
+
+            <p> {{ componentsPara11 }} </p>
+            <img :src="imgComponents6" alt="Image components">
+
+        </div>
+
+        <div>
+            <h2 class="subtitle">Global Components</h2>
+
+            <p> {{ globalComponentsPara1 }} </p>
+            <img :src="imgComponents7" alt="Image components">
+
+            <p> {{ globalComponentsPara2 }} </p>
+            <p> {{ globalComponentsPara3 }} </p>
+            <img :src="imgComponents10" alt="Image components">
+
+            <p> {{ globalComponentsPara4 }} </p>
+            <p> {{ globalComponentsPara5 }} </p>
+
+            <article class="message is-info">
+                <div class="message-header">
+                  <p>Info</p>
+                </div>
+                <div class="message-body">
+                    <p> {{ globalComponentsPara6 }} </p>
+                </div>
+            </article>
+            
+            <p> {{ globalComponentsPara7 }} </p>
+            <img :src="imgComponents8" alt="Image components">
+
+            <p> {{ globalComponentsPara8 }} </p>
+
+            <article class="message is-info">
+                <div class="message-header">
+                  <p>Info</p>
+                </div>
+                <div class="message-body">
+                    <p> {{ globalComponentsPara9 }} </p>
+                </div>
+            </article>
+
+            <p> {{ globalComponentsPara10 }} </p>
+            <img :src="imgComponents9" alt="Image components">
+
+            <article class="message is-info">
+                <div class="message-header">
+                  <p>Info</p>
+                </div>
+                <div class="message-body">
+                    <p> {{ globalComponentsPara11 }} </p>
+                </div>
+            </article>
+
+            <p> {{ globalComponentsPara12 }} </p>
+            <p> {{ globalComponentsPara13 }} </p>
+            <p> {{ globalComponentsPara14 }} </p>
+        </div>
+
+        <br><br>
+        <!-- Example -->
+        <div>
+            <h2 class="subtitle">Example</h2>
+        <tweet-component v-for="tweet in tweets" :key="tweet.id"></tweet-component>
+        </div>
+
+        <br><br>
+        <div style="display: flex; justify-content: space-between; padding: 15px;">
+            <a href="../Day_10/index.html">Day 10 : Lifecycle Hooks</a>
+            <a href="../Day_12/index.html">Day 12 : Vue Components - Props</a>
+        </div>
+        
+    </div>
+
+    <script src="../Day_1/js/vue.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.4/css/bulma.css" />
+    <title>Day 10 | 30 Days of Vue JS</title>
+</head>
+<body>
+    <div id="app">
+        <h2 class="title"> {{title}} </h2>
+        <div>
+            <p> {{ lifecycleHooksPara1 }} </p>
+        </div>
+        <br>
+        <div>
+            <h3 class="subtitle">Created</h3>
+            
+            <p> {{createdPara1}} </p>
+            <p> {{createdPara2}} </p>
+            <img v-bind:src="imgHooks1" alt="Image lifecycle hooks">
+
+            <p> {{createdPara3}} </p>
+            <p> {{createdPara4}} </p>
+            <img v-bind:src="imgHooks2" alt="Image lifecycle hooks">
+
+            <p> {{createdPara5}} </p>
+            <img v-bind:src="imgHooks3" alt="Image lifecycle hooks">
+
+            <p> {{createdPara6}} </p>
+            <p> {{createdPara7}} </p>
+            <img v-bind:src="imgHooks4" alt="Image lifecycle hooks">
+
+            <p> {{createdPara8}} </p>
+            <p> {{createdPara9}} </p>
+            <img v-bind:src="imgHooks5" alt="Image lifecycle hooks">
+
+            <p> {{createdPara10}} </p>
+            <img v-bind:src="imgHooks6" alt="Image lifecycle hooks">
+
+            <p> {{createdPara11}} </p>
+            <img v-bind:src="imgHooks7" alt="Image lifecycle hooks">
+
+            <p> {{createdPara12}} </p>
+            <img v-bind:src="imgHooks8" alt="Image lifecycle hooks">
+
+            <p> {{createdPara13}} </p>
+            <img v-bind:src="imgHooks9" alt="Image lifecycle hooks">
+
+            <p> {{createdPara14}} </p>
+            <p> {{createdPara15}} </p>
+        </div>
+        <br><br>
+        
+        <div>
+            <h3 class="subtitle">Mounted</h3>
+            
+            <p> {{mountedPara1}} </p><br>
+            <h2 class="subtitle">What does mounting mean?</h2>
+            <p> {{mountedPara2}} </p>
+            <p> {{mountedPara3}} </p>
+            <p> {{mountedPara4}} </p>
+            <p> {{mountedPara5}} </p>
+            <img v-bind:src="imgHooks10" alt="Image lifecycle hooks">
+
+            <p> {{mountedPara6}} </p>
+            <img v-bind:src="imgHooks11" alt="Image lifecycle hooks">
+            <p> {{mountedPara7}} </p>
+
+        </div>
+        <br><br>
+
+        <div>
+            <h3 class="subtitle">Updated</h3>
+            
+            <p> {{updatedPara1}} </p><br>
+            <p> {{updatedPara2}} </p>
+            <p> {{updatedPara3}} </p>
+            <img v-bind:src="imgHooks12" alt="Image lifecycle hooks">
+
+        </div>
+        <br><br>
+
+        <div>
+            <h3 class="subtitle">Destroyed</h3>
+            
+            <p> {{destroyedPara1}} </p><br>
+            <img v-bind:src="imgHooks13" alt="Image lifecycle hooks">
+            <p> {{destroyedPara2}} </p><br>
+
+        </div>
+        <br><br>
+        <div>
+            <h3 class="subtitle">Before hooks</h3>
+            
+            <p> {{beforeHooksPara1}} </p><br>
+            <img v-bind:src="imgHooks14" alt="Image lifecycle hooks">
+            <p> {{beforeHooksPara2}} </p><br>
+            <p> {{beforeHooksPara3}} </p><br>
+            <p> {{beforeHooksPara4}} </p><br>
+
+        </div>
+        <br><br><br><br>
+
+        <!-- Example -->
+        <div class="card">
+            <header class="card-header">
+                <p class="card-header-title">
+                    {{name}}
+                </p>
+            </header>
+            <div class="card-content">
+                <div class="content">
+                    <p>{{company.name}}</p>
+                    <p>"{{company.catchPhrase}}"</p>
+                </div>
+            </div>
+            <footer class="card-footer">
+                <a href="#" class="card-footer-item">
+                    {{email}}
+                </a>
+            </footer>
+        </div>
+        <br><br>
+        <div style="display: flex; justify-content: space-between; padding: 15px;">
+            <a href="../Day_9/index.html">Day 9 : Watchers</a>
+            <a href="../Day_11/index.html">Day 11 : Vue Components - Global Components</a>
+        </div>
+    </div>
+
+    <script src="../Day_1/js/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
