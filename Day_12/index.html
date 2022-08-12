@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.4/css/bulma.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Day 12 | 30 Days of Vue JS</title>
+</head>
+<body>
+    <div id="app">
+        
+        <div>
+            <h2 class="title"> {{ title }} </h2>
+            <p> {{ mainPara1 }} </p>
+            <p> {{ mainPara2 }} </p>
+        </div>
+        <br>
+        <div>
+            <h2 class="subtitle">Props</h2>
+            <p> {{ propsPara1 }} </p>
+            <img :src="imgProps1" alt="Image props">
+
+            <p> {{ propsPara2 }} </p>            
+            <p> {{ propsPara3 }} </p>
+            <img :src="imgProps2" alt="Image props">
+
+            <p> {{ propsPara4 }} </p>            
+            <p> {{ propsPara5 }} </p>
+            <img :src="imgProps3" alt="Image props">
+
+            <p> {{ propsPara6 }} </p>
+            <img :src="imgProps4" alt="Image props">
+            <p> {{ propsPara7 }} </p>
+
+        </div>
+        <br>
+        
+        <div>
+            <h2 class="subtitle">Prop Validation</h2>
+
+            <p> {{ propsValidationPara1 }} </p>
+            <img :src="imgProps5" alt="Image props">
+
+            <p> {{ propsValidationPara2 }} </p>
+            <img :src="imgProps6" alt="Image props">
+            <p> {{ propsValidationPara3 }} </p>
+        </div>
+        <br/>
+
+        <div>
+            <h2 class="subtitle">Paren - Child Relationships</h2>
+
+            <p> {{ propsRelationshipPara1 }} </p>
+            <p> {{ propsRelationshipPara2 }} </p>
+            <img :src="imgProps7" alt="Image props">
+
+            <p> {{ propsRelationshipPara3 }} </p>
+            <img :src="imgProps8" alt="Image props">
+
+            <p> {{ propsRelationshipPara4 }} </p>
+            <p><strong>Props:</strong></p>
+            <img :src="imgProps9" alt="Image props">
+
+            <p> {{ propsRelationshipPara5 }} </p>
+            <p> {{ propsRelationshipPara6 }} </p>
+            <img :src="imgProps10" alt="Image props">
+
+            <p> {{ propsRelationshipPara7 }} </p>
+            <p> {{ propsRelationshipPara8 }} </p>
+        </div>
+        <br/>
+
+        <div id="example">
+            <h3 class="subtitle">Example</h3>
+            <tweet-component v-for="tweet in tweets" :key="tweet.id" :tweet="tweet"></tweet-component>
+        </div>
+
+        <br><br>
+        <div style="display: flex; justify-content: space-between; padding: 15px;">
+            <a href="../Day_11/index.html">Day 11 : Vue Components - Global Components</a>
+            <a href="../Day_13/index.html">Day 13 : Vue Components - Custom Events</a>
+        </div>
+        
+    </div>
+
+    <script src="../Day_1/js/vue.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
